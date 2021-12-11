@@ -13,8 +13,20 @@ section {
     overflow-x:hidden;
 }
 
-#landing-section {
+.index-background {
     background: url('Images/child-green.jpg') no-repeat center center fixed;
+}
+
+.lavergne-background {
+    background: url('Images/houseimg.jpg') no-repeat center center fixed;
+}
+
+.careers-background {
+    background: url('Images/happy-baristas.jpg') no-repeat center center fixed;
+}
+
+#landing-section {
+    
     background-size: cover;
     min-height: 100vh;
     width: 100vw;
@@ -588,6 +600,66 @@ section {
     margin: 5% 15%;
     line-height: 2em;
     text-align: justify;
+}
+
+#map-info {
+    height: 100vh;
+    width: 100vw;
+    background: white;
+}
+
+#map-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10vh;
+    height: 70%;
+}
+
+#map-container div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#map-container a {
+    color: black;
+    text-decoration: none
+}
+
+#openings {
+    position: relative;
+    min-height: 140vh;
+}
+
+#openings h1 {
+    text-align: center;
+    margin: 10vh 0;
+    color: #18888fff;
+    text-transform:uppercase;
+    font-size: 2.8em;
+    font-weight: 200;
+}
+
+#openings h2 {
+    font-size: 2em;
+    margin-bottom: 2.5vh;
+}
+
+#openings a {
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+}
+
+#openings p {
+    margin-bottom: 7.5vh;
+}
+
+#openings div:first-of-type {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20vh;
 }
 
 .custom-shape-divider-bottom-1636418370 {
