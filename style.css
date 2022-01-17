@@ -40,12 +40,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: right;
-    margin-right: 10px;
+    margin-left: 0;
     padding: 15px 30px;
     color: rgba(200,200,200, 0.8);
     font-size: 1.2em;
     overflow:visible;
     position: relative;
+    width: 95%;
 }
 
 #navbar li:hover {
@@ -127,7 +128,7 @@ section {
     background-size: 100% 2px;
 }
 
-#navbar li:first-of-type {
+#navbar li:nth-of-type(2) {
     margin-right: auto;
     z-index: 1;
 }
@@ -138,6 +139,7 @@ section {
 
 #burger {
     display: none;
+    
 }
 
 #burger div {
@@ -150,7 +152,7 @@ section {
 
 #logo {
     z-index: 5;
-    margin-right: 26vw;
+    margin-right: auto;
 }
 
 #circlecorner {
@@ -1617,7 +1619,7 @@ section {
 
     #support-container > div:nth-of-type(2) {
         height: unset;
-        min-height:180vh
+        min-height:10vh
     }
 
 }
