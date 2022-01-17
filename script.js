@@ -1,5 +1,6 @@
 let burger = document.getElementById("burger");
 let navbar = document.getElementById("navbar");
+let navbarItems = document.querySelectorAll("#navbar li:not(:first-of-type)")
 let tuitionHeader1 = document.getElementById("tuition-header1");
 let tuitionHeader2 = document.getElementById("tuition-header2");
 let tuitionHeader3 = document.getElementById("tuition-header3");
@@ -8,7 +9,13 @@ let tuitionText2 = document.getElementById("tuition-text2");
 let tuitionText3 = document.getElementById("tuition-text3");
 
  burger.addEventListener("click", () => {
-     navbar.style.transform === "translateY(-86%)" ? navbar.style.transform = "translateY(0)" : navbar.style.transform = "translateY(-86%)";
+     for(i = 0; i < navbarItems.length; i++) {
+        if(navbarItems[i].style.display === 'none') {
+            navbarItems[i].style.display = 'block'
+        } else {
+            navbarItems[i].style.display = 'none'
+        }
+     }
  });
 
 tuitionHeader1.addEventListener("click", ()=> {
