@@ -6,6 +6,9 @@
 
 :root {
     --main-orange: #f58634ff;
+    --main-green: 
+    --main-blue:
+    --main-yellow
 }
 
 body {
@@ -41,7 +44,7 @@ section {
     align-items: center;
     justify-content: right;
     margin-left: 0;
-    padding: 15px 30px;
+    padding: 20px;
     color: rgba(200,200,200, 0.8);
     font-size: 1.2em;
     overflow:visible;
@@ -58,6 +61,10 @@ section {
 }
 
 .nav-focus {
+    color: white;
+}
+
+a.nav-focus {
     color: white;
 }
 
@@ -195,6 +202,11 @@ section {
     min-height: 100vh;
     width: 100vw;
     background: white;
+}
+
+#our-mission a {
+    color: unset;
+    text-decoration: none;
 }
 
 #our-mission h1 {
@@ -746,7 +758,7 @@ section {
     height: 300px;
     width: 300px;
     border-radius: 20px;
-    background: #18888fff;
+    
     position: relative;
 }
 
@@ -832,7 +844,7 @@ section {
 }
 
 #parent-resources a {
-    color: black;
+    color: unset;
     text-decoration: none;
 }
 
@@ -1107,6 +1119,32 @@ section {
 .yellow button {
     color: #fac11aff;
 }
+
+@media (min-width: 1500px) {
+    .banner-text p {
+        font-size: 1.4em;
+    }
+
+    #our-mission p {
+        font-size: 1.6em;
+        line-height: 75px;
+    }
+
+    .program p {
+        font-size: 20px;
+    }
+
+    #history-container p {
+        font-size: 20px;
+        line-height: 3em;
+    }
+
+    #bubble-container p {
+        font-size: 1.4em;
+        line-height: 2em;
+    }
+}
+
 
 @media (max-width: 810px) {
 
@@ -1397,7 +1435,7 @@ section {
     #parent-resources h1 {
         color: white;
         text-align: center;
-        margin-top: 16%;
+        margin-top: 22%;
         margin-bottom: 2%;
         text-align: center;
         text-transform:uppercase;
