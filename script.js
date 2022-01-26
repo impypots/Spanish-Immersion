@@ -1,6 +1,7 @@
 let burger = document.getElementById("burger");
 let navbar = document.getElementById("navbar");
-let navbarItems = document.querySelectorAll("#navbar li:not(:first-of-type)")
+let navbarItems = document.querySelectorAll("#navbar li:not(:first-of-type)");
+let optionsBox = document.querySelector('#support-container > div:nth-of-type(2)');
 let tuitionHeader1 = document.getElementById("tuition-header1");
 let tuitionHeader2 = document.getElementById("tuition-header2");
 let tuitionHeader3 = document.getElementById("tuition-header3");

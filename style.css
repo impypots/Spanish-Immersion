@@ -954,7 +954,7 @@ a.nav-focus {
     margin-left: 5vw;
     margin-bottom: 30vh;
     margin-top: 10vh;
-    position: relative;
+    /* position: relative; */
 }
 
 .tuition-text h3 {
@@ -1526,6 +1526,11 @@ a.nav-focus {
         justify-content: center;
     }
 
+    #logo-footer div {
+        display: flex;
+        flex-direction: column;
+    }
+
     #footer h2 {
         border-bottom: solid white 2px;
         text-shadow: 1px 1px black;
@@ -1568,7 +1573,7 @@ a.nav-focus {
     }
 
     #history-container {
-        padding-bottom: 15%;
+        padding-bottom: 25%;
     }
 
     #history-container img {
@@ -1622,12 +1627,63 @@ a.nav-focus {
     }
 
     #support-container > div:nth-of-type(2) {
-        height: unset;
-        min-height:150vh
+        height:188vh;
     }
 
     .tuition-text h3 {
         text-align: left;
+    }
+
+    .program {
+        width: 80vw;
+        min-height: 16vh;
+        margin-bottom: 16vh;
+    }
+
+    .program img {
+        height: 30vw;
+        width: 30vw;
+        top: -15vw;
+        left: 25vw;
+    }
+
+    .program div {
+        margin-top: 15vw;
+        margin-bottom: 3vh;
+    }
+
+    .program button {
+        width: 50%;
+        margin: 0 25% 3vh 25%;
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        font-size: 1.1em;
+        padding: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    #bubble-container img {
+        width: 30vw;
+        height: 30vw;
+        margin: 0 10vw;
+        border-radius: 50%;
+        border: 5px solid white;
+        background: white;
+        box-sizing: border-box;
+    }
+
+    #history h1 {
+        margin-top: 25%;
+    }
+
+    #our-mission .small-h1 {
+        font-size: 1.8em;
+    }
+
+    #parent-resources {
+        min-height: 145vh;
     }
 
 }
@@ -1660,18 +1716,7 @@ a.nav-focus {
         flex-direction: column;
     }
 
-    .program button {
-        width: unset;
-        min-width: 46%;
-        margin: 0 27% 3vh 27%;
-        background: rgba(255, 255, 255, 0.9);
-        border: none;
-        font-size: 1.1em;
-        padding: 5px;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
+   
 
     #logo-footer img {
         max-width: 60vw;
@@ -1718,10 +1763,32 @@ a.nav-focus {
         text-transform: uppercase;
     }
    
+    #benefits-section h1 {
+        font-size: 1.8em;
+        margin-bottom: 60vh;
+    }
 
-}
+    #benefits-container {
+        margin: 50vh 0 75vh 0;
+    }
 
-@media (max-width: 300px) {
+    .program {
+        width: 80vw;
+        min-height: 16vh;
+        margin-bottom: 16vh;
+    }
+
+    .program img {
+        height: 40vw;
+        width: 40vw;
+        top: -20vw;
+        left: 20vw;
+    }
+
+    .program div {
+        margin-top: 22vw;
+        margin-bottom: 3vh;
+    }
 
     #bubble-container > div:nth-of-type(2) {
         display: flex;
@@ -1752,6 +1819,18 @@ a.nav-focus {
         border: 5px solid white;
         background: white;
         box-sizing: border-box;
+    }
+
+    #history-container img {
+        border: 5px solid white;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    #bubble-container p {
+        text-align: center;
     }
 
     #tour {
@@ -1839,5 +1918,14 @@ a.nav-focus {
 
     #parent-resources span {
         margin-left: 0px;
+    }
+
+    #benefits-section h1 {
+        font-size: 1.8em;
+        margin-bottom: 60vh;
+    }
+
+    #benefits-container {
+        margin: 50vh 0 75vh 0;
     }
 }
