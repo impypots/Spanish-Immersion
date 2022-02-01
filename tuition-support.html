@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="icon-32x32.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Poppins:wght@200;400;700&family=Zen+Antique+Soft&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Marck+Script&family=Poppins:wght@100;400;700&family=Zen+Antique+Soft&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/x-icon" href="icon-32x32.png" />
 </head>
 <body>
     <section id="landing-section" class="index-background">
@@ -25,7 +27,7 @@
                     <img id="logo" src="Images/Jaymes-Christain-Academy-1536x884.png" alt="">
                  
                 </li>
-                <li class="nav-focus">Home</li>
+                <li><a href="index.html">Home</a></li>
                 <li>
                     <a href="">Programs</a>
                     <div class="sub-menu">
@@ -40,7 +42,7 @@
                     <div class="sub-menu">
                         <a href="about-us.html">About Us</a>
                         <a href="career.html">Career</a>
-                        <a href="apply.html">Apply</a>
+                        <a href="https://jaymesacademyllc.easyapply.co/" target="_blank">Apply</a>
                         <a href="tuition-support.html">Tuition Support</a>
                         <a href="parent-corner.html">Parent Corner</a>
                         <a href="covid-19-safety.html">Covid-19 Safety</a>
@@ -49,17 +51,14 @@
                 <li>
                     <a href="">Locations</a>
                     <div class="sub-menu">
-                        <a href="lavergne.html">LaVergne, TN</a>
-                        <a href="murfreesboro-i.html">Murfreesboro I</a>
-                        <a href="murfreesboro-ii.html">Murfreesboro II</a>
-                        <a href="murfreesboro-iii.html">Murfreesboro III</a>
-                        <a href="nashville.html">Nashville, TN</a>
+                        <a href="murfreesboro-i.html">Murfreesboro</a>
                     </div>
                 </li>
                 <li><a target="_blank" href="https://live.childcarecrm.com/portal/index.php?formId=a4610cca850a16bffa8fefaa09aaddba&webForm=077413ea-2900-4543-be24-151ca3a179a7">Contact Us</a></li>
             </ul>
         </nav>
         <div class="banner-text">
+            <img  class="mobile-logo" src="Images/Jaymes-Christain-Academy-1536x884.png" alt="school logo">
             <h1>Give your child the gift of Language Exchange</h1>
             <p>12 percent of Americans are Spanish speakers. Helping cultivate your child's ability to communicate with speakers of America's most common non-English language is a valuable gift that they will utilize their entire life.</p>
         </div>
@@ -84,43 +83,45 @@
         </div>
         <h1>see what options</h1>
         <div id="support-container">
-            <div>
-                <h2 class="white" id="tuition-header1">Child Care Tax Credits</h2>
-                <h2 class="gray tuition-header" id="tuition-header2">Child Care Subsidy Programs</h2>
-                <h2 class="gray tuition-header" id="tuition-header3">Child Care As An Employment Benefit</h2>
-            </div>
-            <div>
-                <div id="tuition-text1" class="tuition-text visible">
-                    <h3>Child Care Tax Credits</h3>
-                    A tax credit is even more valuable to families than a tax deduction! It’s a dollar-for-dollar reduction in the taxes you owe. Some credits are refundable—reducing taxes otherwise owed to zero and paying a refund. 
-    
-     NEW Federal Tax Benefits:
-    
-    The American Rescue Plan Act of 2021 enhanced the benefits of families with children and child care specifically. The details of the new benefits can be hard to understand, so we’re here to break it down. 
-    
-     Under current federal law, eligible families can claim 2021 child care tax credits up to the following maximum amounts:
-    
-    –       $8,000 from the federal Child and Dependent Care Tax Credit (up to $4,000 for each of your first two children). For 2021, this is a refundable credit.
-    
-    –       $6,728 from the federal Earned Income Tax Credit.
-    
-    –       $3,600 per child under six (as of December 31, 2021) and $3,000 for children 17 or younger (as of December 31, 2021) from the federal Child Tax Credit (these amounts were permanently enacted into the law).
-    
-     There are rules for these federal tax credits, so please speak to your tax advisor about how they apply to your family. In the meantime, this child care tax credits calculator is a quick tool for a broad estimate.
-    
-     State Tax Benefits:
-    
-    Each state offers different tax credits to offset the cost of child care. See what benefits might be available to you in Tennessee.
-                </div>
-                <div id="tuition-text2" class="tuition-text">
-                    <h3>Child Care Subsidy Programs</h3>
-                    If your family needs help with tuition, there are state and local agencies to provide tuition subsidies. This map is a great starting point for finding the financial assistance resources available.
-                </div>
-                <div id="tuition-text3" class="tuition-text">
-                    <h3>Child Care As An Employment Benefit</h3>
-                    More and more employers add child care benefits to their employee compensation packages because it’s hard to do your job without reliable child care!
+            <div class="collapse">
+                <input type="checkbox" id="collapse-head-1">
+                <label for="collapse-head-1">Child Care Tax Credits</label>
+                <div class="collapse-text">
+                    <p> A tax credit is even more valuable to families than a tax deduction! It’s a dollar-for-dollar reduction in the taxes you owe. Some credits are refundable—reducing taxes otherwise owed to zero and paying a refund.<br>
 
- Talk with your employer or your HR department about whether they offer child care benefits and how to use them.
+                        <b>NEW Federal Tax Benefits:</b><br>
+                       
+                       The <a target="_blank" href="https://www.congress.gov/bill/117th-congress/house-bill/1319/text#toc-H2806490352E44CAA8FCB35EE05603CCB">American Rescue Plan Act of 2021</a> enhanced the benefits of families with children and child care specifically. The details of the new benefits can be hard to understand, so we’re here to break it down.<br>
+                       
+                        Under current federal law, eligible families can claim 2021 child care tax credits up to the following maximum amounts:<br>
+                       
+                       –     <b>$8,000</b>   from the federal Child and Dependent Care Tax Credit (up to $4,000 for each of your first two children). For 2021, this is a refundable credit.<br>
+                       
+                       –     <b>$6,728</b>   from the federal Earned Income Tax Credit.<br>
+                       
+                       –     <b>$3,600</b>   per child under six (as of December 31, 2021) and <b>$3,000</b> for children 17 or younger (as of December 31, 2021) from the federal Child Tax Credit (these amounts were permanently enacted into the law).<br>
+                       
+                        There are rules for these federal tax credits, so please speak to your tax advisor about how they apply to your family. In the meantime, this <a target="_blank" href="https://www.kiplinger.com/taxes/602334/2021-child-tax-credit-calculator">child care tax credits calculator</a> is a quick tool for a broad estimate.<br>
+                       
+                        <b>State Tax Benefits:</b><br>
+                       
+                       Each state offers different tax credits to offset the cost of child care. <a target="_blank" href="https://www.taxcreditsforworkersandfamilies.org/state-tax-credits/">See what benefits might be available to you</a> in Tennessee.</p>
+                </div>
+            </div>
+            <div class="collapse">
+                <input type="checkbox" id="collapse-head-2">
+                <label for="collapse-head-2">Child Care Subsidy Programs</label>
+                <div class="collapse-text">
+                    <p>If your family needs help with tuition, there are state and local agencies to provide tuition subsidies. <a target="_blank" href="https://www.childcareaware.org/resources/map/">This map</a> is a great starting point for finding the financial assistance resources available.</p>
+                </div>
+            </div>
+            <div class="collapse">
+                <input type="checkbox" id="collapse-head-3">
+                <label for="collapse-head-3">Child Care As An Employment Benefit</label>
+                <div class="collapse-text">
+                    <p>More and more employers add child care benefits to their employee compensation packages because it’s hard to do your job without reliable child care!
+
+                        Talk with your employer or your HR department about whether they offer child care benefits and how to use them.</p>
                 </div>
             </div>
         </div>
@@ -207,11 +208,7 @@
             <div>
                 <h2>Locations</h2>
                 <ul>
-                    <li><a href="lavergne.html">LaVergne, TN</a></li>
-                    <li><a href="murfreesboro-i.html">Murfreesboro I</a></li>
-                    <li><a href="murfreesboro-ii.html">Murfreesboro II</a></li>
-                    <li><a href="murfreesboro-iii.html">Murfreesboro III</a></li>
-                    <li><a href="nashville.html">Nashville, TN</a></li>
+                    <li><a href="murfreesboro-i.html">Murfreesboro</a></li>
                 </ul>
             </div>
             <div>

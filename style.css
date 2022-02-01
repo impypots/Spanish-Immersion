@@ -31,12 +31,17 @@ section {
     background: url('Images/happy-baristas.jpg') no-repeat center center fixed;
 }
 
+.mobile-logo {
+    display: none;
+}
+
 #landing-section {
     position: relative;
     background-size: cover;
     min-height: 100vh;
     width: 100vw;
     color: white;
+    background-position: center center;
 }
 
 #navbar {
@@ -932,11 +937,61 @@ a.nav-focus {
 }
 
 #options-section {
-    min-height:125vh;
+    min-height:100vh;
     background: #00d159ff;
     position: relative;
     z-index: 1;
     /* overflow-x: unset; */
+}
+
+.collapse {
+    overflow: hidden;
+}
+
+.collapse input {
+    display: none;
+}
+
+.collapse label {
+    position: relative;
+    font-weight: 600;
+    background: white;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba( 0,0,0, .08);
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.5em;
+    color: #00d159ff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapse-text {
+    max-height: 1px;
+    /* overflow: hidden; */
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    
+}
+
+.collapse input:checked ~ .collapse-text {
+    max-height: 2000px;
+    padding-bottom: 25px;
+    background: white;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba( 0,0,0, .08);
+    opacity: 1;
+    top: 0;
+}
+
+.collapse-text p {
+    padding: 15px;
+    line-height: 30px;
 }
 
 #options-section h1 {
@@ -949,64 +1004,24 @@ a.nav-focus {
 }
 
 #support-container {
-    z-index: 1;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-bottom: 30vh;
-    margin-top: 10vh;
-    /* position: relative; */
+    margin: 5% 0 15% 0;
+    
 }
 
-.tuition-text h3 {
-    display: none;
-}
-
-#support-container > div:first-child {
-    width: 100%;
-    margin: 0;
-}
-
-#support-container > div:first-child h2 {
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    display: inline;
-    z-index: 1;
-    position: relative;
-    margin: 0;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#support-container > div:nth-of-type(2) {
-    width: 100%;
-    height: 75vh;
-    margin-left: 0%;
-    text-align: justify;
-    background: rgb(255, 255, 255);
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    z-index: 1;
-    position: relative;
-}
-
-#support-container > div:nth-of-type(2) > div {
+#support-container > div {
+    
+    margin: 10px 0 20px 10%;
+    height: unset;
+    /* padding: 20px; */
     width: 80%;
-    margin-left: 10%;
-    padding: 5% 0;
-    text-align: justify;
-    background: rgb(255, 255, 255);
-    z-index: 1;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.tuition-text {
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
+.collapse-text a {
+    text-decoration: none;
 }
+
 
 .visible {
     opacity: 1;
@@ -1148,6 +1163,22 @@ a.nav-focus {
 
 @media (max-width: 810px) {
 
+    .mobile-logo {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 20%;
+    }
+
+    #landing-section {
+        position: relative;
+        background-size: cover;
+        min-height: 100vh;
+        width: 100vw;
+        color: white;
+        background-position: top center;
+        
+    }
+
     #navbar {
         background: #395456;
         flex-direction: column;
@@ -1228,7 +1259,7 @@ a.nav-focus {
     }
 
     .banner-text h1 {
-        font-size: 2.8em;
+        font-size: 2.6em;
         text-align: center;
         margin-bottom: 5%;
         text-transform:uppercase;
@@ -1374,16 +1405,8 @@ a.nav-focus {
         flex-direction: column;
     }
 
-    #support-container h2 {
-        font-size: 10px;
-        padding: 0 50px;
-        /* color: rgba(0,0,0,0); */
-        overflow-x: hidden;
-    }
 
-    #support-container > div:nth-of-type(2) {
-        height: 90vh;
-    }
+    
 
     #options-section h1 {
         margin-top: 15vh;
@@ -1497,18 +1520,6 @@ a.nav-focus {
 
     #program-container p {
         text-align: left;
-    }
-
-    #support-container h2 {
-        font-size: 4px;
-        padding: 0 50px;
-        color: rgba(0,0,0,0);
-        overflow-x: hidden;
-    }
-
-    #support-container > div:nth-of-type(2) {
-        height: unset;
-        min-height:120vh
     }
 
     .tuition-text h3 {
@@ -1648,10 +1659,6 @@ a.nav-focus {
         color: hsl(0, 0%, 100%);
     }
 
-    #support-container > div:nth-of-type(2) {
-        height:188vh;
-    }
-
     .tuition-text h3 {
         text-align: left;
     }
@@ -1708,6 +1715,15 @@ a.nav-focus {
         min-height: 145vh;
     }
 
+    #support-container {
+        margin: 5% 0 30% 0;
+        
+    }
+
+    .banner-text h1 {
+        font-size: 2.0em;
+    }
+
 }
 
 @media (max-width: 350px) {
@@ -1747,11 +1763,6 @@ a.nav-focus {
     #logo-footer div {
         display: flex;
         flex-direction: column;
-    }
-
-    #support-container > div:nth-of-type(2) {
-        height: unset;
-        min-height:10vh
     }
 
     #our-mission img {
@@ -1810,6 +1821,13 @@ a.nav-focus {
     .program div {
         margin-top: 22vw;
         margin-bottom: 3vh;
+    }
+
+   
+
+    #support-container {
+        margin: 5% 0 30% 0;
+        
     }
 
     #bubble-container > div:nth-of-type(2) {
@@ -1970,4 +1988,5 @@ a.nav-focus {
         margin: 0;
         width: 90%;
     }
+
 }
