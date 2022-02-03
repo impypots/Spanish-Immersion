@@ -1416,6 +1416,10 @@ a.nav-focus {
 
 @media (max-width: 600px) {
 
+    .index-background {
+        background: url('Images/child-green-mobile.jpg') no-repeat center center fixed;
+    }
+
     .banner-text {
         margin-bottom: 20%;
     }
