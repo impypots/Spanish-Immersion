@@ -1420,6 +1420,11 @@ a.nav-focus {
         background: url('Images/child-green-mobile.jpg') no-repeat center center fixed;
     }
 
+    #landing-section {
+        overflow-y: hidden;
+        
+    }
+
     .banner-text {
         margin-bottom: 20%;
     }
