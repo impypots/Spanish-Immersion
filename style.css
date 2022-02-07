@@ -1637,11 +1637,12 @@ a.nav-focus {
 
     #benefits-section {
         min-height: 160vh;
+        overflow-y: hidden;
     }
 
 
     #benefits-container {
-        margin: 0vh 0 40vh 0;
+        margin: 0vh 0 60vh 0;
         display: flex;
         width: 100%;
         height: 90vh;
@@ -1747,7 +1748,7 @@ a.nav-focus {
     }
 
     #benefits-container {
-        margin: 50vh 0 55vh 0;
+        margin: 50vh 0 75vh 0;
         display: flex;
         width: 100%;
         height: 90vh;
@@ -1805,9 +1806,6 @@ a.nav-focus {
         margin-bottom: 400px;
     }
 
-    #benefits-container {
-        margin: 50vh 0 75vh 0;
-    }
 
     .program {
         width: 80vw;
