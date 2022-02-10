@@ -1418,8 +1418,16 @@ a.nav-focus {
 @media (max-width: 600px) {
 
     .index-background {
-        background: url('Images/child-green-mobile.jpg');
+        background: url('Images/child-green-mobile.jpg') no-repeat center center;
          /* no-repeat center center fixed; */
+    }
+
+    .lavergne-background {
+        background: url('Images/houseimg.jpg') no-repeat center center;
+    }
+
+    .careers-background {
+        background: url('Images/happy-baristas.jpg') no-repeat center center;
     }
 
     #landing-section {
