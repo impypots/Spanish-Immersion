@@ -6,9 +6,9 @@
 
 :root {
     --main-orange: #f58634ff;
-    --main-green: 
-    --main-blue:
-    --main-yellow
+    --main-green: #00d159ff;
+    --main-blue: hsl(184, 71%, 33%);
+    --main-yellow: #fac11aff;
 }
 
 body {
@@ -20,7 +20,8 @@ section {
 }
 
 .index-background {
-    background: url('Images/child-green.jpg') no-repeat center center fixed;
+    background: url('Images/child-green.jpg');
+     /* no-repeat center center fixed; */
 }
 
 .lavergne-background {
@@ -1417,7 +1418,8 @@ a.nav-focus {
 @media (max-width: 600px) {
 
     .index-background {
-        background: url('Images/child-green-mobile.jpg') no-repeat fixed;
+        background: url('Images/child-green-mobile.jpg');
+         /* no-repeat center center fixed; */
     }
 
     #landing-section {
